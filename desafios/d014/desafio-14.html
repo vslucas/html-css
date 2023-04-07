@@ -29,7 +29,6 @@
             background-color: gray;
             color: white;
             font-weight: bold;
-            text-align: left;
         }
     </style>
 </head>
@@ -37,10 +36,10 @@
     <table>
         <thead>
             <tr>
-                <th rowspan="2">Área</th>
-                <th rowspan="2">Disciplinas</th>
-                <th colspan="2">Notas</th>
-                <th rowspan="2">Média</th>
+                <th rowspan="2" scope="col">Área</th>
+                <th rowspan="2" scope="col">Disciplinas</th>
+                <th colspan="2" scope="colgroup">Notas</th>
+                <th rowspan="2" scope="col">Média</th>
             </tr>
             <tr>
                 <th>Nota 1</th>
@@ -49,7 +48,7 @@
         </thead>
         <tbody>
             <tr>
-                <th rowspan="4">Exatas</th>
+                <th rowspan="4" scope="rowgroup">Exatas</th>
                 <td>Matemática</td>
                 <td>7.0</td>
                 <td>8.0</td>
@@ -64,7 +63,7 @@
             <tr>
                 <td>Química</td>
                 <td>7.5</td>
-                <td>6</td>
+                <td>6.0</td>
                 <td>6.75</td>
             </tr>
             <tr>
@@ -73,12 +72,12 @@
                 <td>10.0</td>
                 <td>9.5</td>
             </tr>
-            <tr>
-                <td colspan="4" class="media">Média de Exatas</td>
+            <tr class="media">
+                <th colspan="4" scope="row">Média de Exatas</th>
                 <td>7,6</td>
             </tr>
             <tr>
-                <th rowspan="2">Humanas</th>
+                <th rowspan="2" scope="rowgroup">Humanas</th>
                 <td>História</td>
                 <td>10.0</td>
                 <td>10.0</td>
@@ -90,8 +89,8 @@
                 <td>9.5</td>
                 <td>9.75</td>
             </tr>
-            <tr>
-                <td colspan="4" class="media">Média de Humanas</td>
+            <tr class="media">
+                <th colspan="4" scope="row">Média de Humanas</th>
                 <td>9.9</td>
             </tr>
         </tbody>
