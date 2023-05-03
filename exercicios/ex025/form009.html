@@ -8,14 +8,16 @@
 </head>
 <body>
     <h1>Exemplo de Formulário</h1>
-    <p>
-        <label for="inumero">Número: </label>
-        <input type="range" name="numero" id="inumero" min="0" max="10" value="5" oninput="ivalor.innerHTML = Number(inumero.value)">
-        <output id="ivalor">5</output>
-    </p>
-    <p>
-        <input type="submit" value="Enviar">
-        <input type="reset" value="Limpar">
-    </p>
+    <form action="cadastro.php" method="get" autocomplete="on">
+        <p>
+            <label for="inumero">Número: </label>
+            <input type="range" name="numero" id="inumero" min="0" max="10" value="5" oninput="ivalor.innerHTML = Number(inumero.value)">
+            <output id="ivalor">5</output>
+        </p>
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
+    </form>
 </body>
 </html>
