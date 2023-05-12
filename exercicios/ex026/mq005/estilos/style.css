@@ -13,17 +13,32 @@ header {
 
 header > h1 {
     padding: 10px;
-    margin-bottom: -20px;
+    margin-bottom: -5px;
     text-align: center;
 }
 
-nav {
+span#burguer {
+    background-color: rgb(48, 48, 48);
+    color: white;
     display: block;
+    text-align: center;
+    padding: 10px;
+    cursor: pointer;
+}
+
+span#burguer:hover {
+    background-color: white;
+    color: black;
+}
+
+nav {
+    display: none;
 }
 
 nav > ul {
     list-style-type: none;
     padding-left: 0px;
+    margin-top: 0px;
 }
 
 nav > ul > li > a { /* Ou apenas nav a */
