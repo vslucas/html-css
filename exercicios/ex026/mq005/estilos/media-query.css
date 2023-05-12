@@ -1,0 +1,28 @@
+@charset "UTF-8";
+
+/* Typical Device Breakpoints (dados abaixo de Maio de 2023)
+------------------------------
+Dispositivos extra pequenos (celulares): até 600px
+Dispositivos pequenos (tablets em modo retrato ou "em pé" e celulares grandes: de 600px até 768px
+Dispositivos médios (tablets em modo paisagem ou "deitado"): de 768px até 992px
+Dispositivos grandes (laptops/desktops): de 992px até 1200px
+Dispositivos extra grandes (laptops/desktops grandes): de 1200px para cima
+*/
+
+@media screen and (min-width: 768px) {
+    span#burguer {
+        display: none;
+    }
+
+    nav {
+        display: block;
+    }
+
+    nav > ul > li { /* Ou apenas nav li */
+        display: inline-block;
+    }
+
+    main {
+        width: 768px;
+    }
+}
